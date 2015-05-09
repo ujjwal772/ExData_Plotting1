@@ -4,7 +4,7 @@ source("preProcessData.R")
 png("plot3.png", width= 480, height = 480)
 
 #Create empty plot and then add each line
-plot(ds$DateTime,ds$Sub_metering_1, ylab = "Energy Sub metering", xlab = "", type = "n")
+plot(ds$DateTime,ds$Sub_metering_1, ylab = "Energy sub metering", xlab = "", type = "n")
 lines(ds$DateTime, ds$Sub_metering_1)
 lines(ds$DateTime, ds$Sub_metering_2, col="red")
 lines(ds$DateTime, ds$Sub_metering_3, col="blue")
